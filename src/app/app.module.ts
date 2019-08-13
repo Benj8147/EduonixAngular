@@ -1,25 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import {FormsModule} from "@angular/forms";
-import { ImageComponentComponent } from './image-component/image-component.component';
+import {AppComponent} from './app.component';
+import {RouterModule} from "@angular/router";
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {OurApplicationRoutingModuleModule} from "./our-application-routing-module/our-application-routing-module.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageComponentComponent
-
+    FirstComponent,
+    SecondComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    OurApplicationRoutingModuleModule,
+    RouterModule
   ],
   providers: [],
-  exports: [
-
-  ],
+  exports: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

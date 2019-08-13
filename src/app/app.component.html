@@ -1,7 +1,5 @@
-<input #box (keyup)="0">
-<p>{{box.value}}</p>
-<hr />
+<router-outlet></router-outlet>
 
-<app-image-component></app-image-component>
-
-
+<a routerLink="/first" routerLinkActive="active">First</a>
+<br/>
+<a routerLink="/second" routerLinkActive="active">Second</a>
