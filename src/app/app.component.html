@@ -1,5 +1,7 @@
-<img src="-/image.jpeg" [alt]="title">
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+<hr />
 
-<input type="text" [ngModel]="text" [(ngModel)]="text"/>
+<app-image-component></app-image-component>
 
-<button (click)="doSomething()">Click Me</button>
+
